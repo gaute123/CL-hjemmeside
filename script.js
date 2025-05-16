@@ -1,3 +1,4 @@
+/* bildeglider */
 const track = document.getElementById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
@@ -30,6 +31,7 @@ const handleOnMove = e => {
     }
 }
 
+
 window.onmousedown = e => handleOnDown(e);
 
 window.ontouchstart = e => handleOnDown(e.touches[0]);
@@ -42,4 +44,8 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-
+/* burgermeny */
+document.getElementById("burgerMeny").onclick = function () {
+    const meny = document.getElementById("clMeny")
+    meny.classList.toggle("vis")
+  };

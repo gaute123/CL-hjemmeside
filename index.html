@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT prosjekt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <main>
-        <img src="bilder/Hoofdfoto-Champions-League.jpg" alt="">
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="image" src="bilder/real24.jpg" draggable="false" />
-            <img class="image" src="bilder/manCity23.jpg" draggable="false" />
-            <img class="image" src="bilder/real22.jpg" draggable="false" />
-            <img class="image" src="bilder/cfc21.jpg" draggable="false" />
-            <img class="image" src="bilder/bayern20.jpeg" draggable="false" />
-            <img class="image" src="bilder/lfc19.jpg" draggable="false" />
+        <div class="topptekst">
+            <i class="fa-solid fa-trophy"></i>
+            <h1>De 7 nyligste mesterne</h1>
+        </div>
+        <i class="fa-solid fa-bars" id="burgerMeny"></i>
+        <nav id="clMeny" class="skjult">
+            <a href="#">sesonger</a>
+            <a href="#">trofeer</a>
+            <a href="#">Om UCL</a>
+        </nav>
+        <img src="bilder/Hoofdfoto-Champions-League.jpg" draggable="false">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="-100">
             <img class="image" src="bilder/real18.jpg" draggable="false" />
-            <img class="image" src="bilder/real17.jpg" draggable="false" />
+            <img class="image" src="bilder/lfc19.jpg" draggable="false" />
+            <img class="image" src="bilder/bayern20.jpeg" draggable="false" />
+            <img class="image" src="bilder/cfc21.jpg" draggable="false" />
+            <img class="image" src="bilder/real22.jpg" draggable="false" />
+            <img class="image" src="bilder/manCity23.jpg" draggable="false" />
+            <img class="image" src="bilder/real24.jpg" draggable="false" />
         </div>
     </main>
 
