@@ -45,7 +45,23 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 /* burgermeny */
-document.getElementById("burgerMeny").onclick = function () {
+document.querySelector(".burgerMeny").onclick = function () {
     const meny = document.getElementById("clMeny")
     meny.classList.toggle("vis")
-  };
+};
+
+/* faktaboks */
+const faktaBoks = document.getElementById("faktaBoks");
+const aapneFakta = document.getElementById("aapneFakta");
+const lukkFakta = document.getElementById("lukkFakta");
+
+aapneFakta.addEventListener("click", () => {
+    faktaBoks.classList.add("aktiv");
+    aapneFakta.style.display = "none";
+});
+
+lukkFakta.addEventListener("click", () => {
+    faktaBoks.classList.remove("aktiv");
+    aapneFakta.style.display = "flex";
+});
+
