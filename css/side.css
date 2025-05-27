@@ -1,116 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
-/* css reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-}
-
-/* main */
-body {
-    font-family: "oswald", sans-serif;
-}
-
-main {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    margin: 0rem;
-    overflow: hidden;
-}
-
-#image-track {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-100%, -50%);
-    user-select: none;
-}
-
-#image-track>.image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 0% center;
-    border-radius: 15px;
-}
-
-h1 {
-    font-size: 45px;
-    font-weight: 600;
-    background: linear-gradient(to right, purple, blue);
-    background-clip: text;
-    color: transparent;
-}
-
-.topptekst {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    top: 3%;
-    left: 1%;
-    border-bottom: 2px solid white;
-    background-color: rgba(1, 1, 99, 0.8);
-}
-
-.fa-solid {
-    font-size: 60px;
-    background: linear-gradient(to left, purple, blue);
-    background-clip: text;
-    color: transparent;
-}
-
-/* burgermeny */
-.indexBurger {
-    position: absolute;
-    top: 6%;
-    right: 3%;
-}
-
-.burgerMeny {
-    cursor: pointer;
-}
-
-#clMeny {
-    display: none !important;
-    position: absolute;
-    top: 7%;
-    right: 7%;
-    background-color: rgba(0, 0, 50, 0.9);
-    padding: 10px 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 100;
-}
-
-#clMeny a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-#clMeny a:hover {
-    color: #8a2be2;
-}
-
-#clMeny.vis {
-    display: flex !important;
-}
-
-/* style til sider */
 .bakgrunn {
     position: fixed;
     top: 0;
@@ -167,6 +54,7 @@ h3 {
     margin: 15px;
     border-radius: 15px;
     max-width: 600px;
+    border: 2px solid blueviolet;
 }
 
 .sesonginfo h2 {
@@ -182,9 +70,44 @@ h3 {
 
 .sideInnhold {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.turneringBildeBoks {
+    align-items: center;
+    height: 370px;
+    width: 350px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.spillerInfo {
+    border: 4px solid goldenrod;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+h4 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 40px;
+}
+
+h5 {
+    background: linear-gradient(to right, purple, blue);
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.pil {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
 
 /* faktaboks */
 .fakta-boks {
@@ -270,11 +193,4 @@ h3 {
 .omUCL {
     font-size: 20px;
     margin-top: 20px;
-}
-
-.turneringBildeBoks {
-    align-items: center;
-    height: 500px;
-    width: 450px;
-    margin: 30px;
 }

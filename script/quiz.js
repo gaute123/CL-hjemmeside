@@ -55,7 +55,7 @@ function visSpørsmål() {
         div.textContent = svar
         div.onclick = () => velgSvar(svar)
         alternativerEl.appendChild(div)
-    });
+    })
 
     nesteBtn.style.display = "none"
 }
@@ -74,7 +74,7 @@ function velgSvar(valgt) {
         } else if (el.textContent === valgt) {
             el.style.backgroundColor = "red"
         }
-    });
+    })
 
     nesteBtn.style.display = "block"
 }
@@ -86,13 +86,13 @@ nesteBtn.onclick = () => {
     } else {
         visResultat()
     }
-};
+}
 
 function visResultat() {
     spørsmålEl.style.display = "none"
     alternativerEl.style.display = "none"
     nesteBtn.style.display = "none"
-    resultatEl.textContent = `Du fikk ${poeng} av ${spørsmål.length} riktige! ⚽`
+    resultatEl.textContent = `Du fikk ${poeng} av ${spørsmål.length} riktige!`
 }
 
-visSpørsmål();
+visSpørsmål()
