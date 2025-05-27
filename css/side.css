@@ -11,7 +11,7 @@
     z-index: -1;
 }
 
-.content {
+.content>main {
     position: relative;
     z-index: 1;
     color: white;
@@ -77,12 +77,14 @@ h3 {
 .turneringBildeBoks {
     align-items: center;
     height: 370px;
-    width: 350px;
+    width: auto;
     margin: 30px;
     border-radius: 15px;
 }
 
 .spillerInfo {
+    display: flex;
+    flex-direction: column;
     border: 4px solid goldenrod;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
