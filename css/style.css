@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600&display=swap');
 
 /* css reset */
 * {
@@ -10,12 +11,10 @@
 img {
     width: 100%;
 }
-
-/* main */
 body {
     font-family: "oswald", sans-serif;
 }
-
+/* main */
 main {
     height: 100vh;
     width: 100vw;
@@ -41,25 +40,36 @@ main {
     object-position: 0% center;
     border-radius: 15px;
 }
-h1 {
-    font-size: 45px;
-    font-weight: 600;
-    background: linear-gradient(to right, purple, blue);
-    background-clip: text;
-    color: transparent;
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+  z-index: 100;
+
 }
 
+.gerrard {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 1.3rem;
+  color: rgb(181, 181, 181);
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 100;
+}
 .topptekst {
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 20px;
     padding: 10px;
     top: 3%;
     left: 1%;
-    border-bottom: 2px solid white;
-    background-color: rgba(1, 1, 99, 0.8);
 }
 
 .fa-solid {
@@ -68,6 +78,7 @@ h1 {
     background-clip: text;
     color: transparent;
 }
+
 /* burgermeny */
 .indexBurger {
     position: absolute;
