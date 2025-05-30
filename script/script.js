@@ -1,3 +1,18 @@
+/* burgermeny */
+const burger = document.querySelector(".burgerMeny")
+const meny = document.getElementById("clMeny")
+const sesongToggler = document.getElementById("sesongToggler")
+
+document.querySelector(".burgerMeny").onclick = function () {
+    const meny = document.getElementById("clMeny")
+    meny.classList.toggle("vis")
+}
+document.getElementById("sesongToggler").onclick = function (e) {
+    e.preventDefault()
+    const dropdown = this.parentElement
+    dropdown.classList.toggle("vis")
+}
+
 /* bildeglider */
 const track = document.getElementById("image-track");
 const isMobile = window.innerWidth <= 768
@@ -60,26 +75,6 @@ if (!isMobile) {
 
     window.ontouchmove = e => handleOnMove(e.touches[0]);
 }
-
-/* burgermeny */
-const burger = document.querySelector(".burgerMeny")
-const meny = document.getElementById("clMeny")
-const sesongToggler = document.getElementById("sesongToggler")
-
-if (burger && meny) {
-    burger.onclick = function () {
-        meny.classList.toggle("vis")
-    }
-}
-
-if (sesongToggler) {
-    sesongToggler.onclick = function (e) {
-        e.preventDefault()
-        const dropdown = this.parentElement
-        dropdown.classList.toggle("vis")
-    }
-}
-
 
 
 

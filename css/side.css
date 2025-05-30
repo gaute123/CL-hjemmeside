@@ -229,7 +229,7 @@ h5 {
     }
 
     .sesonginfo {
-        max-width: 1000px;
+        max-width: 730px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
