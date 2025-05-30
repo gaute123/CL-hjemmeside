@@ -62,16 +62,23 @@ if (!isMobile) {
 }
 
 /* burgermeny */
-document.querySelector(".burgerMeny").onclick = function () {
-    const meny = document.getElementById("clMeny")
-    meny.classList.toggle("vis")
-}
-document.getElementById("sesongToggler").onclick = function (e) {
-    e.preventDefault()
-    const dropdown = this.parentElement
-    dropdown.classList.toggle("vis")
+const burger = document.querySelector(".burgerMeny")
+const meny = document.getElementById("clMeny")
+const sesongToggler = document.getElementById("sesongToggler")
+
+if (burger && meny) {
+    burger.onclick = function () {
+        meny.classList.toggle("vis")
+    }
 }
 
+if (sesongToggler) {
+    sesongToggler.onclick = function (e) {
+        e.preventDefault()
+        const dropdown = this.parentElement
+        dropdown.classList.toggle("vis")
+    }
+}
 
 
 

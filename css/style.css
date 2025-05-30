@@ -101,14 +101,13 @@ h1 {
 }
 
 #clMeny {
-    display: none !important;
+    display: none;
     position: absolute;
     top: 7%;
     right: 7%;
     background-color: rgba(0, 0, 50, 0.9);
     padding: 10px 20px;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     gap: 10px;
     z-index: 100;
@@ -244,8 +243,6 @@ h1 {
     .topptekst h1 {
         font-size: 1.3rem;
         max-width: 90vw;
-        background-color: rgb(1, 43, 167);
-        padding: 10px;
     }
     .gerrard {
         font-size: 1.4rem;
@@ -253,9 +250,14 @@ h1 {
 
     .bakgrunnsbilde{
      background-image: url(../bilder/bakgrunn-mindre.jpg);
+     opacity: 0.5;
     }
     .fa-solid {
         font-size: 40px;
         color: blueviolet;
+    }
+    .indexBurger{
+        z-index: 100;
+        position: absolute;
     }
 }

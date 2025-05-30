@@ -1,7 +1,5 @@
 .bakgrunn {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -9,6 +7,34 @@
     background-repeat: no-repeat;
     opacity: 0.3;
     z-index: -1;
+}
+
+.real18>.bakgrunn {
+    background-image: url(../bilder/real18.jpg);
+}
+
+.lfc>.bakgrunn {
+    background-image: url(../bilder/lfc19.jpg);
+}
+
+.bayern>.bakgrunn {
+    background-image: url(../bilder/bayern20.jpeg);
+}
+
+.cfc>.bakgrunn {
+    background-image: url(../bilder/cfc21.jpg);
+}
+
+.real22>.bakgrunn {
+    background-image: url(../bilder/real22.jpg);
+}
+
+.mancity>.bakgrunn {
+    background-image: url(../bilder/manCity23.jpg);
+}
+
+.real24>.bakgrunn {
+    background-image: url(../bilder/real24.jpg);
 }
 
 .content>main {
@@ -195,4 +221,47 @@ h5 {
 .omUCL {
     font-size: 20px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .sideInnhold {
+        flex-direction: column;
+    }
+
+    .sesonginfo {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .spillerInfo {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    .fa-solid {
+        background: linear-gradient(to right, purple, blue);
+        background-clip: text;
+        color: transparent;
+        font-size: 50px;
+    }
+    .fa-info{
+        color: white;
+        font-size: 20px;
+    }
+    .Gbilde{
+        display: none;
+    }
+    .vinnere{
+        height: 60%;
+        width: 60%;
+    }
+
 }
